@@ -1,5 +1,5 @@
 import React from "react";
-import '../index.css';
+//import '../index.css';
 //import {box,statBox,} from '../style.css';
 import useStats from '../utils/usestats';
 

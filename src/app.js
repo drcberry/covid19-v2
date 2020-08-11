@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import './index.css';
+//import './index.css';
 
 import WorldStats from './components/worldstats';
 import CountrySelector from './components/countryselector';
@@ -19,7 +19,7 @@ export default function App() {
   
   
   return(
-    <div id='covid'>
+    <div>
       
       <h1 > COVID-19 Cases Worldwide</h1>
       
