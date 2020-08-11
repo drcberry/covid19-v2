@@ -41,7 +41,7 @@ p {
   width: 80vw;;
   
 }
-.stat-box {
+.statBox {
   line-height: 0.8rem;
   color: var(--box-text);
   background-color: var(--box);
@@ -49,7 +49,7 @@ p {
   border-radius:12px;
   box-shadow: 0px 0px 4px 0 var(--shadow) inset;
 }
-.stat-box h3 {
+.statBox h3 {
   line-height:1.2;
   margin: 2px 0;
 }
