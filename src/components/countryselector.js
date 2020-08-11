@@ -1,5 +1,5 @@
 import React from "react";
-import {select,selector} from '../style.css';
+//import {select,selector} from '../style.css';
 import useStats from '../utils/usestats';
 import {ApiContext} from '../utils/apicontext';
 
@@ -13,7 +13,7 @@ export default function CountrySelector() {
   const keys = (countries.countries).map(e=>e.name);
     
   return(
-    <div className={selector}>
+    <div className='selector'>
       <h3>
         COVID-19 Cases for Country: <br /><span>{isCountry}</span>
       </h3>

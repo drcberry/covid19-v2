@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import './style.css';
+import './index.css';
 
 import WorldStats from './components/worldstats';
 import CountrySelector from './components/countryselector';

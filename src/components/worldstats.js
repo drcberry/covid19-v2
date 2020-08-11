@@ -1,5 +1,6 @@
 import React from "react";
-import {box,statBox,confirmed,deaths,recovered} from '../style.css';
+import '../index.css';
+//import {box,statBox,} from '../style.css';
 import useStats from '../utils/usestats';
 
 export default function WorldStats() {
@@ -10,20 +11,20 @@ export default function WorldStats() {
   if(error) return <p>Aw Man!No Stats!</p>;
   
   return (
-      <div className={box}>
-        <div className={statBox}>
+      <div className='box'>
+        <div className='statBox'>
           <h3>Confirmed:</h3>
-          <span className={confirmed}>
+          <span className='confirmed'>
             {stats.confirmed.value.toLocaleString()}
           </span>
         </div>
-        <div className={statBox}>
+        <div className='statBox'>
           <h3>Deaths:</h3>
-          <span className={deaths}>{stats.deaths.value.toLocaleString()}</span>
+          <span className='deaths'>{stats.deaths.value.toLocaleString()}</span>
         </div>
-        <div className={statBox}>
+        <div className='statBox'>
           <h3>Recovered:</h3>
-          <span className={recovered}>{stats.recovered.value.toLocaleString()}</span>
+          <span className='recovered'>{stats.recovered.value.toLocaleString()}</span>
         </div>
      </div>
   )

@@ -29,19 +29,28 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
-          // style-loader
-          { loader: 'style-loader' },
-          // css-loader
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              import: true
+              importLoaders: 1,
+              modules: {
+                localIdentName: "[name]__[local]___[hash:base64:5]",
+              },
             }
           }
-        ]
+        ],
+        include: /\.module\.css$/
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+        exclude: /\.module\.css$/
       }
     ]
   },
