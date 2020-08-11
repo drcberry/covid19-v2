@@ -1,5 +1,5 @@
 const webpack = require('webpack'); //to access built-in plugins
-
+const autoprefixer = require('autoprefixer');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 //const path = require('path');
@@ -42,16 +42,27 @@ module.exports = {
             }
           }
         ],
-        include: /\.module\.css$/
+        include: /\.module\.css$/,
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
           'css-loader',
+          { 
+            loader: 'postcss-loader',
+            options: {
+                importLoaders: 2,
+                ident: 'postcss',
+                plugins: () => [
+                    autoprefixer({})
+                ]
+            }
+          }
         ],
-        exclude: /\.module\.css$/
-      }
+        exclude: [/node_modules/, /\.module\.css$/]
+      },
     ]
   },
   

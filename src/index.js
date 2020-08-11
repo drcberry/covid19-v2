@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './index.css';
-
-import App from './app';
 import {ApiData} from './utils/apicontext';
 import {ApiStats} from './utils/datacontext';
 
+import App from './app';
+import './index.css';
+
 const app = document.querySelector('#app');
-//const ApiContext = React.createContext(null);
-//const DataContext = React.createContext(null);
 
 ReactDOM.render(
 <ApiData>
@@ -16,4 +14,5 @@ ReactDOM.render(
     <App />
   </ApiStats>
 </ApiData>
-, app)
+, 
+app)

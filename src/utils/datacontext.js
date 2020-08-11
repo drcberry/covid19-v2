@@ -16,5 +16,4 @@ export const ApiStats = ({children}) => {
   }
 
   return <DataContext.Provider value={dataStore}>{children}</DataContext.Provider>
-
 }

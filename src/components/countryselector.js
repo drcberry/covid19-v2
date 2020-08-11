@@ -1,5 +1,4 @@
 import React from "react";
-//import {select,selector} from '../style.css';
 import useStats from '../utils/usestats';
 import {ApiContext} from '../utils/apicontext';
 

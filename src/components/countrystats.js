@@ -1,10 +1,6 @@
 import React from "react";
-//import '../style.css';
-
 import useStats from '../utils/usestats';
-//import CountrySelector from './countryselector';
 import {ApiContext} from '../utils/apicontext';
-
 
 export default function CountryStats() {
   const {country:[isCountry, setIsCountry]} = React.useContext(ApiContext);

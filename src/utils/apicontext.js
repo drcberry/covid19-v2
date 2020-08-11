@@ -14,7 +14,5 @@ export const ApiData = ({children}) => {
     region: [isRegion, setIsRegion]  
   }
 
-  
-
   return <ApiContext.Provider value={apiStore}>{children}</ApiContext.Provider>
 }
